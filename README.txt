@@ -3,7 +3,7 @@
 1. Create a PostgreSQL database:
    - Name: homeservices
    - User: postgres
-   - Password: your_password (replace in db.js)
+   - Password: Shreya2705
 
 2. Run this SQL command to create the required tables:
 -------------------------------------------------------
