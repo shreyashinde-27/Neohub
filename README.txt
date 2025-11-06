@@ -6,7 +6,7 @@
    - Password: Shreya2705
 
 2. Run this SQL command to create the required tables:
--------------------------------------------------------
+
 CREATE TABLE services (
   id SERIAL PRIMARY KEY,
   name VARCHAR(100),
@@ -21,7 +21,7 @@ CREATE TABLE bookings (
   service_name VARCHAR(100),
   payment_method VARCHAR(50)
 );
--------------------------------------------------------
+
 
 3. Install backend dependencies:
    npm install express pg cors body-parser
