@@ -1,4 +1,4 @@
-//New db.js File 
+
 const { Pool } = require("pg");
 
 const pool = new Pool({
