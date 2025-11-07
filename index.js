@@ -26,14 +26,13 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization"]
   })
 );
-// optional: handle preflight quickly
+
 app.options("*", cors());
-// Routes
+
 app.use("/api/auth", authRoutes);
 app.use("/api/services", serviceRoutes);
 app.use("/api/bookings", bookingRoutes);
 
-// Root endpoint
 app.get("/", (req, res) => {
   res.send("Home Services API is running 🚀");
 });
