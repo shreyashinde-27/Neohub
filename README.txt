@@ -38,5 +38,5 @@ CREATE TABLE bookings (
    - POST /api/bookings → for booking submission
    - GET /api/bookings/services → fetch all available services
 
-   # Update: Improved project description on 30 Oct 2025
+   # Update: Improved project description on 30 Oct 2025.
 
