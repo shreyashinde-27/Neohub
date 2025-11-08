@@ -2,7 +2,6 @@ import { Router } from "express";
 const router = Router();
 import { query } from "../db";
 
-// Book a service
 router.post("/", async (req, res) => {
   const { name, contact_number, booking_date, service_name, payment_method } = req.body;
 
@@ -18,7 +17,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// Get all services (optional route if frontend needs to display service list)
+
 router.get("/services", async (req, res) => {
   try {
     const result = await query("SELECT * FROM services");
