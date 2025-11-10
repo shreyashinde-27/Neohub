@@ -17,7 +17,7 @@ app.use(express.json());
 
 import cors from "cors";
 
-// put this BEFORE app.use('/api/...') routes
+
 app.use(
   cors({
     origin: ["http://localhost:5173"],
@@ -37,7 +37,6 @@ app.get("/", (req, res) => {
   res.send("Home Services API is running 🚀");
 });
 
-// Server listen
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
